@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Product list with cart</title>
+  </head>
+  <body>
+    <h1 id="Dess">Desserts</h1>
+    <div class="layout">
+      <div class="container">
+        <div class="card">
+          <img
+            class="image"
+            src="assets/images/image-waffle-desktop.jpg"
+            alt="Waffle-pic"
+            height="200px"
+            width="200px"
+          />
+
+          <button class="add-cart">🛒Add to Cart</button>
+          <h3 class="card-title">Waffle</h3>
+          <p class="card-text">Waffle with Berries</p>
+          <p class="price">$6.50</p>
+        </div>
+
+        <div class="card">
+          <img
+            class="image"
+            src="assets/images/image-creme-brulee-desktop.jpg"
+            alt="Vanilla-pic"
+            height="200px"
+            width="200px"
+          />
+          <button class="add-cart">🛒Add to Cart</button>
+          <h3 class="card-title">Crème Brûlée</h3>
+          <p class="card-text">Vanilla Bean Crème </p>
+          <p class="price">$7.00</p>
+        </div>
+
+        <div class="card">
+          <img
+            class="image"
+            src="assets/images/image-macaron-desktop.jpg"
+            alt="Macaron-pic"
+            height="200px"
+            width="200px"
+          />
+          <button class="add-cart">🛒Add to Cart</button>
+
+          <h3 class="card-title">Macaron</h3>
+          <p class="card-text">Macaron Mix of Five</p>
+          <p class="price">$8.00</p>
+        </div>
+
+        <div class="card">
+          <img
+            class="image"
+            src="assets/images/image-tiramisu-desktop.jpg"
+            alt="Tiramisu-pic"
+            height="200px"
+            width="200px"
+          />
+          <button class="add-cart">🛒Add to Cart</button>
+          <h3 class="card-title">Tiramisu</h3>
+          <p class="card-text">Classic Tiramisu</p>
+          <p class="price">$5.50</p>
+        </div>
+
+        <div class="card">
+          <img
+            class="image"
+            src="assets/images/image-baklava-desktop.jpg"
+            alt="Baklava-pic"
+            height="200px"
+            width="200px"
+          />
+          <button class="add-cart">🛒Add to Cart</button>
+          <h3 class="card-title">Baklava</h3>
+          <p class="card-text">Pistachio Baklava</p>
+          <p class="price">$4.00</p>
+        </div>
+
+        <div class="card">
+          <img
+            class="image"
+            src="assets/images/image-meringue-desktop.jpg"
+            alt="Meringue-pic"
+            height="200px"
+            width="200px"
+          />
+          <button class="add-cart">🛒Add to Cart</button>
+          <h3 class="card-title">Pie</h3>
+          <p class="card-text">Lemon Meringue Pie</p>
+          <p class="price">$5.00</p>
+        </div>
+
+        <div class="card">
+          <img
+            class="image"
+            src="assets/images/image-cake-desktop.jpg"
+            alt="Cake-pic"
+            height="200px"
+            width="200px"
+          />
+          <button class="add-cart">🛒Add to Cart</button>
+          <h3 class="card-title">Cake</h3>
+          <p class="card-text">Red Velvet Cake</p>
+          <p class="price">$4.50</p>
+        </div>
+
+        <div class="card">
+          <img
+            class="image"
+            src="assets/images/image-brownie-desktop.jpg"
+            alt="Brownie-pic"
+            height="200px"
+            width="200px"
+          />
+          <button class="add-cart">🛒Add to Cart</button>
+          <h3 class="card-title">Brownie</h3>
+          <p class="card-text">Salted Caramel Brownie</p>
+          <p class="price">$4.50</p>
+        </div>
+
+        <div class="card">
+          <img
+            class="image"
+            src="assets/images/image-panna-cotta-desktop.jpg"
+            alt="Panna-pic"
+            height="200px"
+            width="200px"
+          />
+          <button class="add-cart">🛒Add to Cart</button>
+          <h3 class="card-title">Panna Cotta</h3>
+          <p class="card-text">Vanilla Panna Cotta</p>
+          <p class="price">$6.50</p>
+        </div>
+      </div>
+
+      <div class="cart">
+        <h3 class="cart-title">Your Cart(0)</h3>
+        <ul class="cart-items-list"></ul>
+        <p class="total">Total = 0</p>
+        <button id="confirmorder">Confirm Order</button>
+      </div>
+
+      <div class="modal">
+        <span class="modal-icon">✔️</span>
+        <h2 class="orderconfirmed">Order Confirmed</h2>
+        <p>We hope you enjoy!</p>
+        <ul class="modal-list"></ul>
+        <div class="modal-total">$0.00</div>
+        <button class="modal-button">START NEW ORDER</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

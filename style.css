@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0px;
+    font-family: sans-serif;
+}
+body{
+    margin: 30px;
+}
+ 
+#Dess{
+
+    margin-left:200px;
+
+} 
+
+
+.container{
+    background-color: rgb(231, 229, 229);
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;  
+    border-radius: 15px;
+    margin:10px 150px 20px;
+
+}
+
+
+
+.card{
+    border: none;
+    position: relative;
+    padding: 30px;
+    
+    margin: 20px;
+  
+}
+.rendr{
+    width: 120px;
+    height: 30px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: none;
+     padding-left: 10px; 
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 700;
+    margin-left: -14px;
+     margin-right: -10px;
+}
+
+.rendr:hover{
+    width: 120px;
+    height: 30px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 136, 0);
+
+}
+
+.add-cart{
+    position: absolute;
+   bottom: 110px;
+    width: 120px;
+    height: 30px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: none;
+    margin-left: 35px;
+    padding-left: 10px; 
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 700;    
+}
+
+.add-cart:hover,
+.add-cart.active  {
+    width: 120px;
+    height: 30px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 136, 0);
+    border: 3px solid rgb(255, 136, 0);
+    padding-left: 10px; 
+}
+
+
+
+.card-title{
+    font-weight: 400;
+    margin-bottom: 5px;
+    
+   
+}
+
+.card-text{
+    font-weight: 700;
+    margin-bottom: 5px;
+    padding-right: 20px;
+    
+}
+
+.layout{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+
+#decre, #incre {
+    background-color: rgb(255, 136, 0);
+    border-radius: 50%;
+    border-color: white;
+    border: solid, 1px;
+    color: white;
+    padding: 0px 6px; 
+    font-size: 18px;
+    display: inline-block;
+    cursor: pointer; 
+}
+
+#decre{
+    margin-left: -10px;
+}
+#qty {
+    font-size: 18px;
+    margin: 0 10px;
+    color: white;
+    background-color:  rgb(255, 136, 0);
+    text-align: center;
+    display: inline-block;
+}
+
+
+
+.image{
+    
+    border-radius: 30px;
+    margin-bottom: 0px;
+    
+}
+
+.cart{
+    margin-top: 5px;
+    margin-right: 100px;
+    background-color: rgb(231, 229, 229);
+    height: auto;
+    min-height: 400px;
+    width: 40%;
+    border-radius: 15px;
+    border: none;
+    
+}
+.cart-title{
+    color: rgb(255, 136, 0);
+    background: none;
+    font-size: 25px;
+    padding-right: 150px;
+    margin-left: 10px;
+
+}
+
+.price{
+    color: rgb(255, 136, 0);
+    font-size: 17px;
+    
+}
+
+
+li {
+    list-style-type: none;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: rgb(231, 229, 229);}
+
+.item-name {
+    font-weight: bold;
+    font-size: 15px;
+    color: #333;
+   
+    background: none;
+}
+
+.item-quantity {
+    font-size: 15px;
+    color: #ff8800;
+    font-weight: bold;
+    margin-right: 10px;
+    background: none;
+}
+
+.priceper{
+    background: none;
+    color:#666;
+}
+
+.item-total-price {
+    font-weight: 600;
+    color: #666;
+    background: none;
+}
+
+.delete-item{
+    border: solid,#666 , 1.5px,;
+    border-radius: 15px;
+    padding: 0px 3px 0px;
+    margin-left: 18%;
+    background: none;
+    color: #666;
+} 
+
+.total{
+    font-size: 20px;
+    font-weight: 600;
+    background: none;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+#confirmorder{
+ 
+    width: 90%;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    height: 30px;
+    background-color: #ff8800;
+    color: rgba(223, 222, 222, 0.863);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: auto;
+    max-width: 500px;
+    background-color: white;
+    border: solid,#ff8800, 3px;
+    z-index: 1000;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.modal-icon{
+    border: solid,2px;
+    border-radius: 21px;
+    padding: 5px;
+    border-color: green;
+    background: none;
+    
+}
+.orderconfirmed{
+    margin-top: 15px;
+    background: none;
+    font-size: 30px;
+}
+.modal p{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background: none;
+    font-size: 15px;
+}
+
+.modal-total{
+    background-color: rgb(231, 229, 229);
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+   
+}
+
+.modal-list li{    
+    background-color: rgb(231, 229, 229);
+}
+
+.modalitemname{
+    background: none;
+    font-size: 20px;
+    
+}
+
+.modalitemqty{
+    background: none;
+    color: #ff8800;
+    font-weight: bold;
+    
+}
+.modalpriceper{
+    background: none;
+    font-weight: 15px;
+    margin-right: 50%;
+}
+.modalitemprice{
+    background: none;
+    font-weight: 400;
+    font-size: 20px;
+    
+    
+}
+
+.texttotal{
+    font-size: 17px;
+    background: none;
+    margin-right: 50%;
+    margin-left: 10px;
+    
+    font-weight: normal;
+}
+
+
+.modal-button{
+    width: 90%;
+    height: auto;
+    min-height: 35px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #ff8800;
+    color: rgba(255, 255, 255, 0.877);
+    border: none;
+    word-spacing: 3px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+
+
+
+
+
+  
+
+@media screen and (max-width: 768px) {
+    .layout {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .container {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .add-cart{
+        bottom: 90px;
+    }
+  
+    .cart {
+        margin-right: 0px;
+      width:90%;
+      margin-top: 20px;
+    }
+ 
+    .texttotal{
+        margin-right:20%;
+    }
+    .modalpriceper{
+        margin-right: 15%;
+    }
+    .delete-item{
+        margin-left: 10%;
+    }
+    #Dess{
+
+        margin-left:10px;
+    
+    } 
+    .card{
+        padding: 10px;
+    }
+  }
+  
